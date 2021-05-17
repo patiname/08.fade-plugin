@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>플러그인</title>
+
+    <style>
+        *{ margin:0;  padding: 0;}
+    </style>
+    <link rel="stylesheet" href="css/swiper.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+
+    <script>
+
+        $(document).ready(function(){
+
+
+            var swiper = new Swiper('.swiper-container', {
+                // Optional parameters
+                // direction: 'vertical',
+                loop: true,
+                autoplay:{
+                    delay:1000
+                },
+
+                // If we need pagination
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable:true
+                },
+
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+
+                // And if we need scrollbar
+                scrollbar: {
+                    el: '.swiper-scrollbar',
+                },
+            });
+
+
+        });//end
+
+    </script>
+
+</head>
+<body>
+
+    <div class="wrap swiper-container">
+        <div class="img_wrap swiper-wrapper">
+            <img class="swiper-slide" src="https://globetrender.com/wp-content/uploads/2020/05/Caribbean-beach.jpg" alt="">
+            <img class="swiper-slide" src="https://globetrender.com/wp-content/uploads/2020/05/Caribbean-beach.jpg" alt="">
+            <img class="swiper-slide" src="https://globetrender.com/wp-content/uploads/2020/05/Caribbean-beach.jpg" alt="">
+            <img class="swiper-slide" src="https://globetrender.com/wp-content/uploads/2020/05/Caribbean-beach.jpg" alt="">
+            <img class="swiper-slide" src="https://globetrender.com/wp-content/uploads/2020/05/Caribbean-beach.jpg" alt="">
+        </div>
+
+        <div class="arrow left swiper-button-prev"> &lArr;</div>
+        <div class="arrow right swiper-button-next"> &rArr; </div>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-scrollbar"></div>
+    </div>
+    
+</body>
+</html>
